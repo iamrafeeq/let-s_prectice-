@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice file </title>
 </head>
-<body>
+<body  id ="body">
 
     <h1>hello git and git hub practice day </h1>
+
+
+    <button onclick="clickme()">Click Me!</button>
+
+<script>
+
+let toggled = false;
+    function clickme() {
+
+       const body =  document.getElementById("body")
+       if (toggled){
+           body. style.backgroundColor = "black";
+           body.style.color = "blue";
+       }else {
+              body.style.backgroundColor = "white";
+              body.style.color = "black";
+       }
+       toggled = !toggled
+    }
+
+
+
+</script>
+
 </body>
 </html>
