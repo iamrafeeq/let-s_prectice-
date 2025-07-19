@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice file </title>
+    <style>
+
+
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        #myDiv {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body  id ="body">
 
@@ -12,7 +41,22 @@
 
     <button onclick="clickme()">Click Me!</button>
 
+
+    <div id="myDiv"> click me to move </div>
+
+    <button onclick="moveDiv()">Move Div</button>
+
 <script>
+
+    function moveDiv() {
+        const myDiv = document.getElementById("myDiv");
+        // myDiv.style.position = "relative";
+        myDiv.style.left = "100px";
+        myDiv.style.top = "100px";
+    }
+
+
+
 
 let toggled = false;
     function clickme() {
@@ -27,6 +71,14 @@ let toggled = false;
        }
        toggled = !toggled
     }
+
+
+</script>
+    
+
+
+
+
 
 
 
